@@ -1,0 +1,39 @@
+#overlay {
+    background: #bfbfbf;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 18%;
+    opacity: .75;
+	z-index: 9999;
+}
+
+.spinner {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    animation: rotate 1.0s infinite linear;
+    border: 10px solid #007ccc;
+    border-right-color: transparent;
+    border-radius: 50%;	
+}
+
+.spinner-message {
+	color: #00485d;
+	font-size: 30px;
+	font-family: Arial;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
